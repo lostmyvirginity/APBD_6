@@ -12,4 +12,6 @@ public class Prescription
 
     public virtual ICollection<PrescriptionMedicament> PrescriptionMedicaments { get; set; } =
         new List<PrescriptionMedicament>();
+    public virtual Doctor DoctorNav { get; set; }
+    public virtual Patient PatientNav { get; set; }
 }

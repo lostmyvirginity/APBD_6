@@ -16,10 +16,10 @@ namespace WebApplication1.Models
 
 
         public virtual DbSet<Medicament> Medicaments { get; set; }
-        public virtual DbSet<PrescriptionMedicament> PrescriptionMedicaments { get; set; }
         public virtual DbSet<Prescription> Prescriptions { get; set; }
         public virtual DbSet<Doctor> Doctors { get; set; }
         public virtual DbSet<Patient> Patients { get; set; }
+        public virtual DbSet<PrescriptionMedicament> PrescriptionMedicaments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

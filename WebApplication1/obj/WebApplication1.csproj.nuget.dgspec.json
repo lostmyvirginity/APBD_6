@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {}
+    "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj": {}
   },
   "projects": {
-    "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {
+    "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+        "projectUniqueName": "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
-        "packagesPath": "/Users/lostmyvirginity/.nuget/packages/",
-        "outputPath": "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/obj/",
+        "projectPath": "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj",
+        "packagesPath": "/home/lomyvi/.nuget/packages/",
+        "outputPath": "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lostmyvirginity/.nuget/NuGet/NuGet.Config"
+          "/home/lomyvi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
