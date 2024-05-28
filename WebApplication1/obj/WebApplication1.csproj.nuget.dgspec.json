@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj": {}
+    "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {}
   },
   "projects": {
-    "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj": {
+    "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj",
+        "projectUniqueName": "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/WebApplication1.csproj",
-        "packagesPath": "/home/lomyvi/.nuget/packages/",
-        "outputPath": "/home/lomyvi/RiderProjects/APBD_6/WebApplication1/obj/",
+        "projectPath": "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+        "packagesPath": "/Users/lostmyvirginity/.nuget/packages/",
+        "outputPath": "/Users/lostmyvirginity/RiderProjects/WebApplication1/WebApplication1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/lomyvi/.nuget/NuGet/NuGet.Config"
+          "/Users/lostmyvirginity/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -72,12 +72,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.4, 8.0.4]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -86,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

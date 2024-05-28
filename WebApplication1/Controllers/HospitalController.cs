@@ -5,7 +5,7 @@ using WebApplication1.Repositories;
 namespace WebApplication1;
 
 [ApiController]
-[Route("api/")]
+[Route("api/[controller]")]
 public class HospitalController : ControllerBase
 {
     private readonly IHospitalRepository _repository;
@@ -20,7 +20,7 @@ public class HospitalController : ControllerBase
         return Ok();
     }
 
-    [HttpPost]
+    [HttpPost("AddPrescription")]
     public async Task<IActionResult> AddPrescription([FromBody] PrescriptionRequestDTO request)
     {
         try

@@ -22,11 +22,11 @@ namespace WebApplication1.Models
         public virtual DbSet<Patient> Patients { get; set; }
         public virtual DbSet<PrescriptionMedicament> PrescriptionMedicaments { get; set; }
 
-        public virtual MedicamentDTO MedicamentDTO { get; set; }
-        public virtual PrescriptionDTO PrescriptionDTO { get; set; }
-        public virtual DoctorDTO DoctorDTO { get; set; }
-        public virtual PatientDTO PatientDTO { get; set; }
-        public virtual PrescriptionMedicamentDTO PrescriptionMedicamentDTO { get; set; }
+        // public virtual MedicamentDTO MedicamentDTO { get; set; }
+        // public virtual PrescriptionDTO PrescriptionDTO { get; set; }
+        // public virtual DoctorDTO DoctorDTO { get; set; }
+        // public virtual PatientDTO PatientDTO { get; set; }
+        // public virtual PrescriptionMedicamentDTO PrescriptionMedicamentDTO { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
