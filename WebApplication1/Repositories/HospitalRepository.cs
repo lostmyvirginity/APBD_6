@@ -13,9 +13,102 @@ public class HospitalRepository : IHospitalRepository
         _context = context;
     }
 
-    public string AddDoctorAsync(DoctorDTO doctor)
+    public async Task<PatientInfoDTO> GetPatient(PatientDTO patientDto)
     {
-        throw new NotImplementedException();
+        var patient = await _context.Patients
+
+           .Where(p => p.IdPatient == patientDto.IdPatient)
+
+           .Select(p => new PatientInfoDTO
+
+            {
+
+                IdPatient = p.IdPatient,
+
+                FirstName = p.FirstName,
+
+                LastName = p.LastName,
+
+                BirthDate = p.BirthDate,
+
+                Doctors = p.Prescriptions
+
+                   .Select(pr => new DoctorDTO
+
+                    {
+
+                        IdDoctor = pr.DoctorNav.IdDoctor,
+
+                        FirstName = pr.DoctorNav.FirstName,
+
+                        LastName = pr.DoctorNav.LastName,
+
+                        Email = pr.DoctorNav.Email
+
+                    })
+
+                   .Distinct()
+
+                   .ToList(),
+
+                Prescriptions = p.Prescriptions
+
+                   .OrderBy(pr => pr.DueDate)
+
+                   .Select(pr => new PrescriptionDTO
+
+                    {
+
+                        IdPrescription = pr.IdPrescription,
+
+                        Date = pr.Date,
+
+                        DueDate = pr.DueDate,
+
+                        Doctor = new DoctorDTO
+
+                        {
+
+                            IdDoctor = pr.DoctorNav.IdDoctor,
+
+                            FirstName = pr.DoctorNav.FirstName,
+
+                            LastName = pr.DoctorNav.LastName,
+
+                            Email = pr.DoctorNav.Email
+
+                        },
+
+                        Medicaments = pr.PrescriptionMedicaments
+
+                           .Select(pm => new MedicamentDTO
+
+                            {
+
+                                IdMedicament = pm.IdMedicamentNav.IdMedicament,
+
+                                Name = pm.IdMedicamentNav.Name,
+
+                                Description = pm.IdMedicamentNav.Description,
+
+                                Type = pm.IdMedicamentNav.Type,
+
+
+                            })
+
+                           .ToList()
+
+                    })
+
+                   .ToList()
+
+            })
+
+           .FirstOrDefaultAsync();
+
+
+        return patient;
+
     }
 
     public async Task AddPrescriptionAsync(PrescriptionRequestDTO req)

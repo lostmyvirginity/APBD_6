@@ -15,9 +15,7 @@ namespace WebApplication1.Configuration
             builder.Property(e => e.Name).HasMaxLength(100).IsRequired();
             builder.Property(e => e.Description).HasMaxLength(100).IsRequired();
             builder.Property(e => e.Type).HasMaxLength(100).IsRequired();
-
-            // adding data
-
+            
             var medicaments = new List<Medicament>();
 
             medicaments.Add(new Medicament

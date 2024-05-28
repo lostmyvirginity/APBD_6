@@ -17,7 +17,6 @@ namespace WebApplication1.Configuration
             builder.Property(e => e.Email).HasMaxLength(100).IsRequired();
             builder.HasIndex(e => e.Email).IsUnique();
 
-            // adding data
             var doctors = new List<Doctor>();
 
             doctors.Add(new Doctor

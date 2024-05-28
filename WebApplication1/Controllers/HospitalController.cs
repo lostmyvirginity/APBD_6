@@ -15,9 +15,27 @@ public class HospitalController : ControllerBase
         _repository = repository;
     }
     [HttpPost]
-    public async Task<IActionResult> AddDoctor([FromBody] DoctorDTO doctor)
+    public async Task<IActionResult> PatientInfo([FromBody] PatientRequestDTO patientReq)
     {
-        return Ok();
+        var patient = await _repository.GetPatient(new PatientDTO()
+        {
+            IdPatient = patientReq.IdPatient,
+            FirstName = patientReq.FirstName,
+            LastName = patientReq.LastName,
+            BirthDate = patientReq.BirthDate
+        });
+
+
+        if (patient == null)
+
+        {
+
+            return NotFound();
+
+        }
+
+
+        return Ok(patient);
     }
 
     [HttpPost("AddPrescription")]

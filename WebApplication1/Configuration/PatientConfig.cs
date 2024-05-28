@@ -15,8 +15,7 @@ namespace WebApplication1.Configuration
             builder.Property(e => e.FirstName).HasMaxLength(100).IsRequired();
             builder.Property(e => e.LastName).HasMaxLength(100).IsRequired();
             builder.Property(e => e.BirthDate).IsRequired();
-
-            // adding data
+            
 
             var patients = new List<Patient>();
 

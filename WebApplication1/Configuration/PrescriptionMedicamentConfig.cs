@@ -33,7 +33,7 @@ namespace WebApplication1.Configuration
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("Prescription_Medicament_FK");
 
-            // adding data
+            
 
             var list = new List<PrescriptionMedicament>();
 

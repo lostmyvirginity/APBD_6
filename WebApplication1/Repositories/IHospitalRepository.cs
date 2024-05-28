@@ -4,6 +4,6 @@ namespace WebApplication1.Repositories;
 
 public interface IHospitalRepository
 {
-    public string AddDoctorAsync(DoctorDTO doctor);
+    public Task<PatientInfoDTO> GetPatient(PatientDTO patientInfoDto);
     Task AddPrescriptionAsync(PrescriptionRequestDTO request);
 }
