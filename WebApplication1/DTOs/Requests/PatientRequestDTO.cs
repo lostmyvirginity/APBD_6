@@ -1,9 +1,9 @@
 namespace WebApplication1.DTOs;
 
-public class DoctorDTO
+public class PatientRequestDTO
 {
-    public int IdDoctor { get; set; }
+    public int IdPatient { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public string Email { get; set; }
+    public DateTime BirthDate { get; set; }
 }

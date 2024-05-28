@@ -1,11 +1,10 @@
 namespace WebApplication1.DTOs;
 
-public class PrescriptionRequestDTO
+public class PrescriptionDTO
 {
     public int IdPrescription { get; set; }
-
-    public PatientRequestDTO Patient { get; set; }
-    public List<MeidcamentRequestDTO> Medicaments { get; set; }
     public DateTime Date { get; set; }
     public DateTime DueDate { get; set; }
+    public int IdPatient { get; set; }
+    public int IdDoctor { get; set; }
 }
